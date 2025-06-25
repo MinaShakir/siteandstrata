@@ -519,13 +519,21 @@
             }
 
             /* Responsive adjustments for image galleries */
+            .image-pair-gallery img,
+            .walkway-gallery img {
+                width: 100%; /* Fill container */
+                max-width: 350px; /* But don't exceed desktop size if container is larger */
+                height: auto; /* Allow height to adjust naturally */
+                max-height: 250px; /* Ensure consistency if aspect ratio is very wide */
+            }
+
             .image-pair-gallery {
-                flex-direction: row; /* Ensure images stay in a row on tablets */
-                align-items: center; /* Center them when stacked */
+                flex-direction: column; /* Stack images vertically on smaller screens */
+                align-items: center; /* Center stacked images */
             }
 
             .walkway-gallery {
-                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery on tablets */
+                grid-template-columns: 1fr; /* Stack walkway images vertically */
             }
         }
 
@@ -608,9 +616,8 @@
                 padding: 0.8rem; /* Reduced section padding */
             }
 
-            /* Heading for All Building Maintenance and Project Gallery */
             h2 {
-                font-size: 1.5rem; /* Adjusted for mobile to be prominent but smaller */
+                font-size: 1.3rem; /* Smallest section header font size */
                 margin-bottom: 0.8rem; /* Reduced margin */
                 padding-bottom: 0.3rem; /* Adjusted padding */
                 border-bottom: 1px solid #ff5733; /* Thinner border */
@@ -628,64 +635,59 @@
                 font-size: 0.95rem; /* Slightly reduced portfolio paragraph size */
             }
 
-            /* Maintenance Boxes - Stacked Column View */
-            .maintenance-boxes {
-                flex-direction: column; /* Stack boxes vertically */
-                gap: 15px; /* Add some vertical gap between stacked boxes */
-            }
             .maintenance-box {
-                padding: 15px; /* Adjusted padding for stacked view */
-                width: 100%; /* Take full width to ensure stacking */
-            }
-            .maintenance-box ul {
-                padding-left: 15px; /* Adjusted padding */
-            }
-            .maintenance-box li {
-                font-size: 0.85rem; /* Smaller font size as per screenshot */
+                padding: 12px; /* Reduced padding */
+                width: calc(50% - 10px); /* Make maintenance boxes side-by-side */
             }
 
-            /* Portfolio Images - Stacked Column View */
-            .image-pair-gallery {
-                flex-direction: column; /* Stack images vertically */
-                align-items: center; /* Center the stacked images */
-                gap: 15px; /* Add vertical gap between images */
+            .maintenance-box ul {
+                padding-left: 12px; /* Reduced padding */
             }
+
+            .maintenance-box li {
+                font-size: 14px; /* Reduced font size */
+            }
+
+            .portfolio-item {
+                padding: 0.8rem; /* Reduced padding */
+            }
+
+            /* Adjust image galleries for side-by-side on mobile */
+            .image-pair-gallery {
+                flex-direction: row; /* Display images in a row */
+                flex-wrap: wrap; /* Allow them to wrap if space is too tight */
+                justify-content: center; /* Center the image pairs */
+                gap: 8px; /* Slightly reduce gap for small screens */
+            }
+
             .image-pair-gallery img {
-                width: 100%; /* Take full width */
-                height: auto; /* Maintain aspect ratio */
-                max-width: unset; /* Ensure it respects 100% width */
+                width: calc(50% - 8px); /* Make images take 50% width with gap */
+                max-width: unset; /* Remove max-width to allow full 50% width */
             }
 
             .walkway-gallery {
-                grid-template-columns: 1fr; /* Single column for walkway gallery */
-                justify-items: center; /* Center items within grid cells */
-                gap: 15px; /* Add vertical gap between images */
+                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
+                gap: 8px; /* Slightly reduce gap for small screens */
             }
             .walkway-gallery img {
-                width: 100%; /* Take full width */
-                height: auto; /* Maintain aspect ratio */
-                max-width: unset; /* Ensure it respects 100% width */
+                width: 100%; /* Fill grid cell */
+                max-width: unset; /* Remove max-width for better column fill */
             }
 
-            /* Adjust portfolio item padding for consistent look */
-            .portfolio-item {
-                padding: 1rem;
-            }
 
-            /* Form Elements */
             form {
-                padding: 0.8rem; /* Reduced padding */
+                padding: 0.6rem; /* Reduced padding */
             }
 
             input,
             textarea {
-                padding: 0.6rem; /* Reduced padding */
-                font-size: 0.9rem; /* Reduced font size */
+                padding: 0.5rem; /* Reduced padding */
+                font-size: 0.85rem; /* Reduced font size */
             }
 
             button {
-                padding: 0.6rem; /* Reduced padding */
-                font-size: 1rem; /* Reduced font size */
+                padding: 0.5rem; /* Reduced padding */
+                font-size: 0.9rem; /* Reduced font size */
             }
         }
 
