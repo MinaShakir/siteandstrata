@@ -519,175 +519,147 @@
             }
 
             /* Responsive adjustments for image galleries */
-            .image-pair-gallery img,
-            .walkway-gallery img {
-                width: 100%; /* Fill container */
-                max-width: 350px; /* But don't exceed desktop size if container is larger */
-                height: auto; /* Allow height to adjust naturally */
-                max-height: 250px; /* Ensure consistency if aspect ratio is very wide */
-            }
-
             .image-pair-gallery {
-                flex-direction: column; /* Stack images vertically on smaller screens */
-                align-items: center; /* Center stacked images */
+                flex-direction: row; /* Ensure images stay in a row on tablets */
+                align-items: center; /* Center them when stacked */
             }
 
             .walkway-gallery {
-                grid-template-columns: 1fr; /* Stack walkway images vertically */
+                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery on tablets */
             }
         }
 
         /* Mobile devices (max-width: 480px) */
         @media (max-width: 480px) {
-            body {
-                font-size: 14px; /* Even smaller base font size */
-            }
+            /* Removed most mobile-specific size adjustments to mimic PC view */
+            /* Body font size reverts to default (likely ~16px) or larger base font if defined */
 
+            /* Header and Logo (will appear large on mobile) */
             header {
-                padding: 1rem;
+                padding: 2rem; /* Revert to desktop padding */
             }
-
             .logo-text h1 {
-                font-size: 1.4rem; /* Further adjust header font size for smaller screens */
+                font-size: 3rem; /* Revert to desktop size */
             }
-
             .logo-text h2 {
-                font-size: 0.9rem; /* Further adjust header font size for smaller screens */
+                font-size: 1.8rem; /* Revert to desktop size */
             }
-
             .est-abn {
-                font-size: 0.7rem; /* Adjusted for smaller screens */
+                font-size: 0.9rem; /* Revert to desktop size */
             }
 
+            /* Services Banner */
             .services-banner {
-                margin-top: 1rem;
-                padding: 0.5rem; /* Reduced padding for smaller screens */
+                padding: 1rem; /* Revert to desktop padding */
             }
-
             .title-box {
-                font-size: 0.6rem; /* Reduced for mobile */
-                padding: 0.2rem 0.4rem; /* Reduced padding */
-                margin-bottom: 0.5rem; /* Reduced margin */
+                font-size: 0.9rem; /* Revert to desktop size */
+                padding: 0.4rem 1rem; /* Revert to desktop padding */
+                margin-bottom: 1rem; /* Revert to desktop margin */
             }
-
             .services-banner h3 {
-                font-size: 0.8rem; /* Reduced for mobile */
-                margin: 0.3rem 0; /* Reduced margin */
+                font-size: 1.3rem; /* Revert to desktop size */
+                margin: 0.5rem 0; /* Revert to desktop margin */
             }
-
-            .service-list {
-                display: flex; /* Keep flex display */
-                flex-wrap: wrap; /* Allow wrapping */
-                justify-content: center; /* Center items */
-                margin: 0.6rem 0; /* Reduced margin */
-                padding: 0;
-                list-style: none;
-            }
-
             .service-list span {
-                margin: 3px 6px; /* Adjusted spacing for wrapped items */
-                padding-right: 6px; /* Adjusted padding */
-                border-right: 1px solid #ff5733; /* Keep border for separation */
-                white-space: nowrap;
-                font-size: 0.65rem; /* Reduced for mobile */
+                font-size: 0.9rem; /* Revert to desktop size */
+                margin: 0 10px; /* Revert to desktop margin */
+                padding-right: 10px; /* Revert to desktop padding */
+                border-right: 2px solid #ff5733; /* Revert to desktop border */
             }
-            .service-list span:last-child {
-                border-right: none; /* No border for the last item */
-            }
-
             .footer-line, .emergency {
-                font-size: 0.7rem; /* Reduced for mobile */
-                margin-top: 0.3rem; /* Adjusted margin */
+                font-size: 0.9rem; /* Revert to desktop size */
+                margin-top: 1rem; /* Revert to desktop margin */
             }
 
-
+            /* Navigation Bar */
             nav {
-                padding: 0.3rem; /* Adjusted for mobile */
+                padding: 1rem; /* Revert to desktop padding */
             }
-
             nav a {
-                display: inline-block; /* Changed to inline-block for side-by-side but allows wrapping */
-                margin: 4px; /* Adjusted spacing */
-                padding: 0.3rem 0.5rem; /* Adjusted for mobile */
-                font-size: 0.8rem; /* Adjusted for mobile */
+                margin: 0 15px; /* Revert to desktop margin */
+                padding: 0.8rem 1.2rem; /* Revert to desktop padding */
+                font-size: 1.1rem; /* Revert to desktop size */
             }
 
+            /* Sections and Headings */
             section {
-                padding: 0.8rem; /* Reduced section padding */
+                padding: 2rem; /* Revert to desktop padding */
             }
-
             h2 {
-                font-size: 1.3rem; /* Smallest section header font size */
-                margin-bottom: 0.8rem; /* Reduced margin */
-                padding-bottom: 0.3rem; /* Adjusted padding */
-                border-bottom: 1px solid #ff5733; /* Thinner border */
+                font-size: 2rem; /* Revert to desktop size */
+                margin-bottom: 1.5rem; /* Revert to desktop margin */
+                padding-bottom: 0.5rem; /* Revert to desktop padding */
+                border-bottom: 2px solid #ff5733; /* Revert to desktop border */
             }
-
             p {
-                font-size: 0.8rem; /* Adjusted general paragraph size for mobile */
+                font-size: 0.95rem; /* Revert to desktop size */
             }
-
             #ndis p {
-                font-size: 0.85rem; /* Adjusted NDIS paragraph size for mobile */
+                font-size: 1rem; /* Revert to desktop size */
             }
-
             .portfolio-item p {
-                font-size: 0.95rem; /* Slightly reduced portfolio paragraph size */
+                font-size: 1.1rem; /* Revert to desktop size */
             }
 
+            /* Maintenance Boxes - Keep side-by-side */
+            .maintenance-boxes {
+                justify-content: center; /* Ensure horizontal centering of boxes */
+                gap: 10px; /* Slightly reduced gap for mobile compactness */
+            }
             .maintenance-box {
-                padding: 12px; /* Reduced padding */
-                width: calc(50% - 10px); /* Make maintenance boxes side-by-side */
+                padding: 20px; /* Revert to desktop padding */
+                width: calc(50% - 5px); /* Adjusted width based on new gap */
             }
-
             .maintenance-box ul {
-                padding-left: 12px; /* Reduced padding */
+                padding-left: 20px; /* Revert to desktop padding */
             }
-
             .maintenance-box li {
-                font-size: 14px; /* Reduced font size */
+                font-size: 16px; /* Revert to desktop size */
             }
 
-            .portfolio-item {
-                padding: 0.8rem; /* Reduced padding */
-            }
-
-            /* Adjust image galleries for side-by-side on mobile */
+            /* Portfolio Images - Keep side-by-side */
             .image-pair-gallery {
                 flex-direction: row; /* Display images in a row */
-                flex-wrap: wrap; /* Allow them to wrap if space is too tight */
-                justify-content: center; /* Center the image pairs */
-                gap: 8px; /* Slightly reduce gap for small screens */
+                justify-content: center; /* Ensure horizontal centering of images */
+                gap: 10px; /* Slightly reduced gap for mobile compactness */
             }
-
             .image-pair-gallery img {
-                width: calc(50% - 8px); /* Make images take 50% width with gap */
-                max-width: unset; /* Remove max-width to allow full 50% width */
+                width: calc(50% - 5px); /* Make images take 50% width with gap */
+                max-width: unset; /* Ensure images can fill their 50% width */
+                object-fit: cover; /* Maintain consistent height by covering area */
+                height: 150px; /* Set a fixed height for consistent rows */
             }
 
             .walkway-gallery {
                 grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
-                gap: 8px; /* Slightly reduce gap for small screens */
+                justify-items: center; /* Center items within their grid cells */
+                gap: 10px; /* Slightly reduced gap for mobile compactness */
             }
             .walkway-gallery img {
                 width: 100%; /* Fill grid cell */
-                max-width: unset; /* Remove max-width for better column fill */
+                max-width: unset; /* Ensure images can fill their 1fr width */
+                object-fit: cover; /* Maintain consistent height by covering area */
+                height: 150px; /* Set a fixed height for consistent rows */
             }
 
+            /* Adding a bit more padding to the portfolio items for better internal spacing */
+            .portfolio-item {
+                padding: 1rem;
+            }
 
+            /* Form Elements */
             form {
-                padding: 0.6rem; /* Reduced padding */
+                padding: 1rem; /* Revert to desktop padding */
             }
-
             input,
             textarea {
-                padding: 0.5rem; /* Reduced padding */
-                font-size: 0.85rem; /* Reduced font size */
+                padding: 0.8rem; /* Revert to desktop padding */
+                font-size: unset; /* Revert to default or inherited font size */
             }
-
             button {
-                padding: 0.5rem; /* Reduced padding */
-                font-size: 0.9rem; /* Reduced font size */
+                padding: 0.75rem; /* Revert to desktop padding */
+                font-size: unset; /* Revert to default or inherited font size */
             }
         }
 
