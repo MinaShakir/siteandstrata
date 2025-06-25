@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site & Strata - Renovation & Maintenance</title>
+    <!-- Favicon link (optional) -->
+    <link rel="icon" href="https://placehold.co/32x32/ff5733/ffffff?text=SS" type="image/x-icon">
+
+    <!-- Open Graph / Facebook / Instagram Meta Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/"> <!-- REPLACE WITH YOUR ACTUAL WEBSITE URL -->
+    <meta property="og:title" content="Site & Strata Solutions - Renovation & Maintenance">
+    <meta property="og:description" content="Expert commercial & residential building maintenance, renovations, and NDIS services in Sydney & Perth since 2010.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/share-preview.jpg"> <!-- REPLACE WITH A HIGH-QUALITY IMAGE URL FOR PREVIEW -->
+    <meta property="og:image:width" content="1200"> <!-- Optimal width for Open Graph images -->
+    <meta property="og:image:height" content="630"> <!-- Optimal height for Open Graph images -->
+
+    <!-- Twitter Card Meta Tags for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.yourwebsite.com/"> <!-- REPLACE WITH YOUR ACTUAL WEBSITE URL -->
+    <meta name="twitter:title" content="Site & Strata Solutions - Renovation & Maintenance">
+    <meta name="twitter:description" content="Expert commercial & residential building maintenance, renovations, and NDIS services in Sydney & Perth since 2010.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/images/twitter-preview.jpg"> <!-- REPLACE WITH A HIGH-QUALITY IMAGE URL FOR TWITTER PREVIEW -->
+
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Inter', Arial, sans-serif; /* Using Inter for a modern look */
+            margin: 0;
+            line-height: 1.6;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            -webkit-font-smoothing: antialiased; /* Smoother font rendering */
+            -moz-osx-smoothing: grayscale;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1a1a1a; /* Slightly lighter dark background */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Logo Section Styling */
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .logo-text h1 {
+            color: #ff5733; /* Accent color */
+            font-size: 3rem; /* Increased size */
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+        }
+
+        .logo-text h2 {
+            color: #ffffff;
+            font-size: 1.8rem; /* Increased size */
+            margin: 0.3rem 0;
+            font-weight: normal;
+        }
+
+        .est-abn {
+            color: #999999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Services Banner Styling */
+        .services-banner {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #1a1a1a;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .title-box {
+            border: 2px solid #ff5733;
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            font-weight: bold;
+            color: #ff5733;
+            font-size: 0.9rem; /* Reduced size */
+            margin-bottom: 1rem;
+            border-radius: 5px; /* Rounded corners for the box */
+        }
+
+        .services-banner h3 {
+            color: #ff5733;
+            font-size: 1.3rem; /* Reduced size */
+            margin: 0.5rem 0;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next line */
+            justify-content: center;
+            margin: 1rem 0;
+            padding: 0; /* Remove default padding */
+            list-style: none; /* Remove list bullets */
+        }
+
+        .service-list span {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #ffffff;
+            border-right: 2px solid #ff5733;
+            padding-right: 10px;
+            white-space: nowrap; /* Prevent individual service names from breaking */
+            font-size: 0.9rem; /* Set base font size for consistency */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        .service-list span:last-child {
+            border-right: none; /* No border for the last item */
+        }
+
+        .footer-line {
+            color: #ff5733;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .emergency {
+            margin-top: 0.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #1a1a1a;
+            padding: 1rem; /* Increased padding */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for separation */
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.8rem 1.2rem; /* Increased padding */
+            font-size: 1.1rem; /* Increased font size */
+            border-radius: 5px; /* Rounded buttons */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        nav a:hover {
+            background-color: #ff5733; /* Highlight on hover */
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2rem;
+            background: #121212;
+            color: #ffffff;
+            margin-bottom: 0.5rem; /* Small margin between sections */
+            border-radius: 8px; /* Consistent rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+            text-align: center; /* This will center all inline and inline-block content inside sections by default */
+        }
+
+        section:nth-of-type(even) { /* Alternate background for better visual separation */
+            background-color: #1a1a1a;
+        }
+
+        h2 {
+            color: #ff5733;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #ff5733; /* Underline effect */
+            padding-bottom: 0.5rem;
+            display: inline-block; /* Make underline fit text width */
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 4px; /* Rounded corners for underline */
+        }
+
+        p {
+            margin-bottom: 1rem;
+            max-width: 800px; /* Limit paragraph width for better reading flow */
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.95rem; /* Adjusted paragraph size for desktop */
+        }
+
+        /* NDIS Section specific styles (overridden for distinct look) */
+        #ndis {
+            background-color: #f5f5f5;
+            color: #222;
+            padding: 2rem;
+            text-align: center; /* Explicitly centered here for consistency */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0.5rem auto; /* Center the section */
+            max-width: 90%; /* Max width for consistency */
+        }
+
+        /* NDIS content wrapper for max-width and margin auto */
+        .ndis-content-wrapper {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #ndis h2 {
+            color: #6b2c91;
+            border-color: #6b2c91;
+            font-size: 1.8rem;
+        }
+
+        #ndis img {
+            width: 150px; /* Specific width for NDIS logo */
+            margin-bottom: 1rem;
+            max-width: 100%; /* Ensure it scales down on smaller screens */
+            height: auto;
+        }
+
+        #ndis p {
+            font-size: 1rem; /* Adjusted NDIS paragraph size for desktop */
+            line-height: 1.6;
+        }
+
+        #ndis a {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.6rem 1.2rem;
+            background-color: #6b2c91;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer; /* Ensure link is visually recognized as clickable */
+        }
+
+        #ndis a:hover {
+            background-color: #5a257a;
+        }
+
+        /* Maintenance Section */
+        .maintenance-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .maintenance-section h2 {
+            font-size: 28px;
+            color: #ff5733;
+            margin-bottom: 30px;
+        }
+
+        .maintenance-boxes {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow boxes to wrap */
+        }
+
+        .maintenance-box {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%; /* Responsive width */
+            min-width: 280px; /* Minimum width, adjusted by media queries */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box; /* Include padding/border in width */
+        }
+
+        .maintenance-box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left; /* Keep list items left-aligned for readability */
+        }
+
+        .maintenance-box li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            /* This is now covered by the general section rule */
+        }
+
+        .portfolio-item {
+            margin-bottom: 2rem;
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #cccccc;
+            text-align: center; /* Explicitly centered here for consistency */
+            max-width: 600px; /* Limit width for centered text */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Gallery image adjustments for full visibility and uniform width */
+        .image-pair-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .image-pair-gallery img {
+            width: calc(50% - 10px); /* Adjust width for two images side-by-side with gap */
+            height: auto; /* Allow height to adjust automatically based on aspect ratio */
+            max-width: 350px; /* Max individual width */
+            max-height: 250px; /* Optional: constrain max height */
+            object-fit: contain; /* Ensures entire image is visible, no cropping */
+            margin: 0; /* Remove existing margins */
+            background-color: #000; /* Optional: Add a background color to see the uniform box if image doesn't fill it */
+            flex-grow: 1; /* Allow images to grow to fill available space in flex container */
+            flex-shrink: 1; /* Allow images to shrink if space is limited */
+            flex-basis: calc(50% - 10px); /* Initial size consideration */
+        }
+
+        .walkway-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit columns, min 300px, max 1fr */
+            gap: 15px;
+            justify-items: center;
+            margin-top: 1rem;
+        }
+
+        .walkway-gallery img {
+            width: 100%; /* Fill grid cell */
+            height: auto; /* Allow height to adjust automatically based on aspect ratio */
+            max-width: 350px; /* Max individual width within grid cell */
+            max-height: 250px; /* Optional: constrain max height */
+            object-fit: contain; /* Ensures entire image is visible, no cropping */
+            margin: 0; /* Remove existing margins */
+            background-color: #000; /* Optional: Add a background color to see the uniform box if image doesn't fill it */
+        }
+
+        /* Testimonials Section */
+        .testimonial {
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            font-style: italic;
+            color: #cccccc;
+            text-align: center; /* Explicitly centered here for consistency */
+            max-width: 800px; /* Limit width for centered text */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Contact Form */
+        #contact p {
+            text-align: center; /* Explicitly centered here for consistency */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px; /* Increased max-width for better desktop form layout */
+            margin: auto;
+            padding: 1rem;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        input,
+        textarea {
+            margin: 0.5rem 0;
+            padding: 0.8rem; /* Increased padding for better touch targets */
+            background-color: #333333;
+            border: 1px solid #ff5733;
+            color: #ffffff;
+            border-radius: 5px; /* Rounded input fields */
+            outline: none; /* Remove outline on focus */
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #aaaaaa;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #e74c3c; /* Change border color on focus */
+        }
+
+        button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px; /* Rounded button */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+        }
+
+        button:hover {
+            background-color: #e74c3c;
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        button:active {
+            transform: translateY(0); /* Return to normal on click */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center; /* Center align footer content */
+            background: #1a1a1a;
+            padding: 1.5rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            border-radius: 8px; /* Consistent rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ==================================== */
+        /* RESPONSIVE DESIGN           */
+        /* ==================================== */
+
+        /* Tablets and smaller desktops (max-width: 768px) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px; /* Slightly smaller base font size */
+            }
+
+            header {
+                padding: 1.5rem;
+            }
+
+            .logo-text h1 {
+                font-size: 2.5rem; /* Adjust header font size */
+            }
+
+            .logo-text h2 {
+                font-size: 1.5rem; /* Adjust header font size */
+            }
+
+            .services-banner {
+                margin-top: 1.5rem;
+                padding: 1rem;
+            }
+
+            .title-box {
+                font-size: 0.8rem; /* Reduced for tablet */
+                padding: 0.3rem 0.8rem;
+            }
+
+            .services-banner h3 {
+                font-size: 1.1rem; /* Reduced for tablet */
+            }
+
+            .service-list span {
+                margin: 0 8px; /* Reduce margin for service list items */
+                padding-right: 8px;
+                font-size: 0.8rem; /* Reduced for tablet */
+            }
+
+            nav {
+                padding: 0.8rem; /* Adjusted for tablet */
+            }
+
+            nav a {
+                margin: 0 10px; /* Reduce navigation link margin */
+                padding: 0.6rem 1rem; /* Adjusted for tablet */
+                font-size: 1rem; /* Adjusted for tablet */
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem; /* Adjust section header font size */
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 0.95rem; /* Adjusted paragraph size for tablet */
+            }
+
+            #ndis p {
+                font-size: 1rem; /* Adjusted NDIS paragraph size for tablet */
+            }
+
+            .portfolio-item p {
+                font-size: 1rem;
+            }
+
+
+            .maintenance-box {
+                width: 90%; /* Make maintenance boxes full width on tablets */
+                min-width: unset; /* Remove min-width restriction */
+            }
+
+            .portfolio-item img {
+                margin: 5px; /* Reduce margin around portfolio images */
+            }
+
+            /* Responsive adjustments for image galleries */
+            .image-pair-gallery img,
+            .walkway-gallery img {
+                width: 100%; /* Fill container */
+                max-width: 350px; /* But don't exceed desktop size if container is larger */
+                height: auto; /* Allow height to adjust naturally */
+                max-height: 250px; /* Ensure consistency if aspect ratio is very wide */
+            }
+
+            .image-pair-gallery {
+                flex-direction: column; /* Stack images vertically on smaller screens */
+                align-items: center; /* Center stacked images */
+            }
+
+            .walkway-gallery {
+                grid-template-columns: 1fr; /* Stack walkway images vertically */
+            }
+        }
+
+        /* Mobile devices (max-width: 480px) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px; /* Even smaller base font size */
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .logo-text h1 {
+                font-size: 1.4rem; /* Further adjust header font size for smaller screens */
+            }
+
+            .logo-text h2 {
+                font-size: 0.9rem; /* Further adjust header font size for smaller screens */
+            }
+
+            .est-abn {
+                font-size: 0.7rem; /* Adjusted for smaller screens */
+            }
+
+            .services-banner {
+                margin-top: 1rem;
+                padding: 0.5rem; /* Reduced padding for smaller screens */
+            }
+
+            .title-box {
+                font-size: 0.6rem; /* Reduced for mobile */
+                padding: 0.2rem 0.4rem; /* Reduced padding */
+                margin-bottom: 0.5rem; /* Reduced margin */
+            }
+
+            .services-banner h3 {
+                font-size: 0.8rem; /* Reduced for mobile */
+                margin: 0.3rem 0; /* Reduced margin */
+            }
+
+            .service-list {
+                display: flex; /* Keep flex display */
+                flex-wrap: wrap; /* Allow wrapping */
+                justify-content: center; /* Center items */
+                margin: 0.6rem 0; /* Reduced margin */
+                padding: 0;
+                list-style: none;
+            }
+
+            .service-list span {
+                margin: 3px 6px; /* Adjusted spacing for wrapped items */
+                padding-right: 6px; /* Adjusted padding */
+                border-right: 1px solid #ff5733; /* Keep border for separation */
+                white-space: nowrap;
+                font-size: 0.65rem; /* Reduced for mobile */
+            }
+            .service-list span:last-child {
+                border-right: none; /* No border for the last item */
+            }
+
+            .footer-line, .emergency {
+                font-size: 0.7rem; /* Reduced for mobile */
+                margin-top: 0.3rem; /* Adjusted margin */
+            }
+
+
+            nav {
+                padding: 0.3rem; /* Adjusted for mobile */
+            }
+
+            nav a {
+                display: inline-block; /* Changed to inline-block for side-by-side but allows wrapping */
+                margin: 4px; /* Adjusted spacing */
+                padding: 0.3rem 0.5rem; /* Adjusted for mobile */
+                font-size: 0.8rem; /* Adjusted for mobile */
+            }
+
+            section {
+                padding: 0.8rem; /* Reduced section padding */
+            }
+
+            h2 {
+                font-size: 1.3rem; /* Smallest section header font size */
+                margin-bottom: 0.8rem; /* Reduced margin */
+                padding-bottom: 0.3rem; /* Adjusted padding */
+                border-bottom: 1px solid #ff5733; /* Thinner border */
+            }
+
+            p {
+                font-size: 0.8rem; /* Adjusted general paragraph size for mobile */
+            }
+
+            #ndis p {
+                font-size: 0.85rem; /* Adjusted NDIS paragraph size for mobile */
+            }
+
+            .portfolio-item p {
+                font-size: 0.95rem; /* Slightly reduced portfolio paragraph size */
+            }
+
+            .maintenance-box {
+                padding: 12px; /* Reduced padding */
+                width: calc(50% - 10px); /* Make maintenance boxes side-by-side */
+            }
+
+            .maintenance-box ul {
+                padding-left: 12px; /* Reduced padding */
+            }
+
+            .maintenance-box li {
+                font-size: 14px; /* Reduced font size */
+            }
+
+            .portfolio-item {
+                padding: 0.8rem; /* Reduced padding */
+            }
+
+            /* Adjust image galleries for side-by-side on mobile */
+            .image-pair-gallery {
+                flex-direction: row; /* Display images in a row */
+                flex-wrap: wrap; /* Allow them to wrap if space is too tight */
+                justify-content: center; /* Center the image pairs */
+                gap: 8px; /* Slightly reduce gap for small screens */
+            }
+
+            .image-pair-gallery img {
+                width: calc(50% - 8px); /* Make images take 50% width with gap */
+                max-width: unset; /* Remove max-width to allow full 50% width */
+            }
+
+            .walkway-gallery {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
+                gap: 8px; /* Slightly reduce gap for small screens */
+            }
+            .walkway-gallery img {
+                width: 100%; /* Fill grid cell */
+                max-width: unset; /* Remove max-width for better column fill */
+            }
+
+
+            form {
+                padding: 0.6rem; /* Reduced padding */
+            }
+
+            input,
+            textarea {
+                padding: 0.5rem; /* Reduced padding */
+                font-size: 0.85rem; /* Reduced font size */
+            }
+
+            button {
+                padding: 0.5rem; /* Reduced padding */
+                font-size: 0.9rem; /* Reduced font size */
+            }
+        }
+
+        /* Ensure smooth transitions for all elements */
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-section">
+            <div class="logo-text">
+                <h1>SITE &amp; STRATA</h1>
+                <h2>SOLUTIONS</h2>
+                <div class="est-abn">
+                    <div>EST. 2010</div>
+                    <div>ABN 62 942 893 580</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-banner">
+            <div class="title-box">Building Maintenance Services</div>
+            <h3>COMMERCIAL &amp; RESIDENTIAL</h3>
+            <div class="service-list">
+                <span>REPAIRS</span>
+                <span>RENOVATIONS</span>
+                <span>MAINTENANCE</span>
+                <span>PAINTING</span>
+                <span>INSTALLATIONS</span>
+                <span>AND MORE</span>
+            </div>
+            <div class="footer-line">We're one call away with all your building needs!</div>
+            <div class="emergency">24 Hour Emergency Services</div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Site and Strata Solutions Pty Ltd is a family-owned business specializing in commercial and residential building maintenance services. Established since 2010, we proudly deliver a full range of building trade services across the region.
+        </p>
+        <p>
+            With over a decade of industry experience, Site and Strata Solutions is committed to providing high-quality, reliable, and competitively priced services. We cater to a diverse client base including homeowners, government agencies, real estate firms, strata management companies, and commercial enterprises.
+        </p>
+        <p>
+            While we specialize in comprehensive project management and coordination, we act as your one-stop point of contact, working closely with a trusted network of licensed trades, including tilers, electricians, and plumbers, to ensure all aspects of your project are covered seamlessly. Our team also includes highly qualified and licensed painters and carpenters, ensuring expert craftsmanship in these key areas.
+        </p>
+        <p>
+            Our reputation is built on integrity, quality workmanship, and dependable service — values that continue to guide everything we do.
+        </p>
+    </section>
+
+    <section id="ndis">
+        <div class="ndis-content-wrapper"> <img src="NDISlogo.png" alt="NDIS Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x50/6b2c91/ffffff?text=NDIS+Logo';">
+            <h2>Registered NDIS Provider</h2>
+            <p>Site &amp; Strata Solutions is proud to be a <strong>Registered NDIS Provider</strong>, delivering essential building maintenance and home modification services that support the safety, independence, and comfort of individuals with disabilities.</p>
+            <p style="margin-top: 1rem;">
+                We work closely with participants, families, and support coordinators to provide reliable and tailored property solutions that align with NDIS plan goals.
+            </p>
+            <p><strong>NDIS Provider Number: 4-JD66R8N</strong></p> <!-- Added NDIS Provider Number here -->
+            <a href="https://www.ndis.gov.au/" target="_blank">
+                Learn More About the NDIS
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="maintenance-section">
+        <h2>All Building Maintenance</h2>
+        <div class="maintenance-boxes">
+            <div class="maintenance-box">
+                <ul>
+                    <li>Painting</li>
+                    <li>Make Safe / Emergency After Hours Services</li>
+                    <li>New Home Finishes</li>
+                    <li>Renovations</li>
+                    <li>Kitchen Installations / Renovations</li>
+                    <li>Door Installations</li>
+                    <li>Gutter Cleaning</li>
+                </ul>
+            </div>
+            <div class="maintenance-box">
+                <ul>
+                    <li>Gutter Repair / Replacements</li>
+                    <li>Rubbish Removal</li>
+                    <li>Roof Repairs & Restorations</li>
+                    <li>Ceiling Repairs / Replacements</li>
+                    <li>Floating Floor Installation</li>
+                    <li>Shop Fit Outs</li>
+                    <li>And More</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Project Gallery</h2>
+
+        <div class="portfolio-item">
+            <p><strong>Kitchen Renovation – Before & After</strong><br>
+            From dated beige finishes to a clean, modern black-and-white design featuring sleek cabinets and improved layout.</p>
+            <div class="image-pair-gallery">
+                <img src="Kitchenbefore.jpg" alt="Before Kitchen" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Kitchenafter.jpg" alt="After Kitchen" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Flooring Renovation – Before & After</strong><br>
+            We removed the worn-out carpet and replaced it with elegant, easy-to-maintain tiles. The result? A cleaner, more modern space with enhanced natural light and lasting durability.</p>
+            <div class="image-pair-gallery">
+                <img src="Floorbefore.jpg" alt="Before Flooring" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Floorafter.jpg" alt="After Flooring" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Eaves Repair – Before & After</strong><br>
+            We repaired damaged eaves with cracks and holes, replacing them with clean, durable panels to restore safety and appearance.</p>
+            <div class="image-pair-gallery">
+                <img src="Eavesbefore.jpg" alt="Before Ceiling" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Eavesafter.jpg" alt="After Ceiling" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Sink Repair – Before & After</strong><br>
+            We replaced the damaged, sink with a modern, stainless-steel fixture. The plumbing was updated for better water flow and long-term durability.</p>
+            <div class="image-pair-gallery">
+                <img src="Sinkbefore.jpg" alt="Before Sink" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Sinkafter.jpg" alt="After Sink" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Walkway Safety Line Restoration – Before & After</strong><br>
+            Restored walkway safety lines with high-visibility markings to improve pedestrian guidance and workplace safety.
+            </p>
+            <div class="walkway-gallery">
+                <img src="linepaintbefore1.jpg" alt="Before Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Linepaintafter1.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Ramp Replacement – Before & After</strong><br>
+            Replaced and repainted ramp to restore function, improve safety, and enhance appearance.
+            </p>
+            <div class="image-pair-gallery">
+                <img src="rampbefore.jpg" alt="Before Ramp" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="rampafter.jpg" alt="After Ramp" class="project.img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <p><strong>Door Installation – Before & After</strong><br>
+            Installed a new door for improved security, function, and aesthetic appeal.
+            </p>
+            <div class="image-pair-gallery">
+                <img src="doorbefore.jpg" alt="Before Door" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="doorafter.jpg" alt="After Door" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"A massive thank you to Site and Strata Solutions for your professional workmanship. Without hesitation we will pass on recommendations. We are very happy with our bathroom and laundry renovations that was stripped completely and renewed. Your reasonable quote came with honesty and peace of mind and this is what everyone is seeking for in these days! Thank you very very much you have in your team the Best Tiler, Best Electrician, Best Glazier and the best YOU! Thank you once again! We have peace of mind and enjoying the new look." – Rash and Sheedo</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Request a free quote or ask us a question:</p>
+        <p><strong>Call us:</strong> <a href="tel:+6100000000" style="color:#ff5733;">0401 544 111</a></p>
+        <p><strong>Email:</strong> <a href="mailto:enquiries@sitenstrata.com" style="color:#ff5733;">enquiries@sitenstrata.com</a></p>
+        <form action="mailto:enquiries@sitenstrata.com">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Site &amp; Strata - Renovation & Maintenance. All rights reserved.</p>
+        <p style="margin-top: 5px; color: #ff5733;">Registered NDIS Provider <span style="color: white; margin-left: 10px;">(Provider No: 4-JD66R8N)</span></p>
+    </footer>
+
+</body>
+</html>
