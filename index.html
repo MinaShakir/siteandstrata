@@ -22,9 +22,9 @@
     <meta name="twitter:title" content="Site & Strata Solutions - Renovation & Maintenance">
     <meta name="twitter:description" content="Expert commercial & residential building maintenance, renovations, and NDIS services in Sydney & Perth since 2010.">
     <meta name="twitter:image" content="https://www.yourwebsite.com/images/twitter-preview.jpg"> <!-- REPLACE WITH A HIGH-QUALITY IMAGE URL FOR TWITTER PREVIEW -->
-
-    <style>
-        /* General Body Styles */
+     
+    <style?
+      /* General Body Styles */
         body {
             font-family: 'Inter', Arial, sans-serif; /* Using Inter for a modern look */
             margin: 0;
@@ -436,7 +436,7 @@
         }
 
         /* ==================================== */
-        /* RESPONSIVE DESIGN           */
+        /* RESPONSIVE DESIGN                     */
         /* ==================================== */
 
         /* Tablets and smaller desktops (max-width: 768px) */
@@ -510,30 +510,37 @@
 
 
             .maintenance-box {
-                width: 90%; /* Make maintenance boxes full width on tablets */
+                width: calc(50% - 10px); /* Make maintenance boxes two columns on tablets */
                 min-width: unset; /* Remove min-width restriction */
             }
+            .maintenance-boxes {
+                justify-content: center; /* Center the boxes */
+            }
+
 
             .portfolio-item img {
                 margin: 5px; /* Reduce margin around portfolio images */
             }
 
             /* Responsive adjustments for image galleries */
-            .image-pair-gallery img,
-            .walkway-gallery img {
-                width: 100%; /* Fill container */
-                max-width: 350px; /* But don't exceed desktop size if container is larger */
-                height: auto; /* Allow height to adjust naturally */
-                max-height: 250px; /* Ensure consistency if aspect ratio is very wide */
+            .image-pair-gallery img {
+                width: calc(50% - 8px); /* Make images take 50% width with gap */
+                max-width: unset; /* Remove max-width to allow full 50% width */
             }
-
             .image-pair-gallery {
-                flex-direction: column; /* Stack images vertically on smaller screens */
-                align-items: center; /* Center stacked images */
+                flex-direction: row; /* Keep images in a row on tablets */
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px; /* Adjust gap */
             }
 
             .walkway-gallery {
-                grid-template-columns: 1fr; /* Stack walkway images vertically */
+                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
+                gap: 10px; /* Adjust gap */
+            }
+            .walkway-gallery img {
+                width: 100%; /* Fill grid cell */
+                max-width: unset; /* Remove max-width for better column fill */
             }
         }
 
@@ -759,8 +766,7 @@
             <p style="margin-top: 1rem;">
                 We work closely with participants, families, and support coordinators to provide reliable and tailored property solutions that align with NDIS plan goals.
             </p>
-            <p><strong>NDIS Provider Number: 4-JD66R8N</strong></p> <!-- Added NDIS Provider Number here -->
-            <a href="https://www.ndis.gov.au/" target="_blank">
+            <p><strong>NDIS Provider Number: 4-JD66R8N</strong></p> <a href="https://www.ndis.gov.au/" target="_blank">
                 Learn More About the NDIS
             </a>
         </div>
@@ -840,12 +846,14 @@
             <div class="walkway-gallery">
                 <img src="linepaintbefore1.jpg" alt="Before Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
                 <img src="Linepaintafter1.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Linepaintbefore2.jpg" alt="Before Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Linepaintafter2.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
             </div>
         </div>
-
-        <div class="portfolio-item">
+    
+      <div class="portfolio-item">
             <p><strong>Ramp Replacement – Before & After</strong><br>
-            Replaced and repainted ramp to restore function, improve safety, and enhance appearance.
+            Replaced ramp to restore function, improve safety, and enhance appearance.
             </p>
             <div class="image-pair-gallery">
                 <img src="rampbefore.jpg" alt="Before Ramp" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
