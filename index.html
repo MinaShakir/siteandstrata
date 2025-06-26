@@ -834,9 +834,7 @@
             </p>
             <div class="walkway-gallery">
                 <img src="linepaintbefore1.jpg" alt="Before Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-                <img src="linepaintafter1.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-                <img src="Linepaintbefore2.jpg" alt="Before Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-                <img src="Linepaintafter2.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                <img src="Linepaintafter1.jpg" alt="After Linepaint" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
             </div>
         </div>
     
@@ -869,17 +867,22 @@
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Request a free quote or ask us a question:</p>
-        <p><strong>Call us:</strong> <a href="tel:+6100000000" style="color:#ff5733;">0401 544 111</a></p>
-        <p><strong>Email:</strong> <a href="mailto:enquiries@sitenstrata.com" style="color:#ff5733;">enquiries@sitenstrata.com</a></p>
-        <form action="mailto:enquiries@sitenstrata.com">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <h2>Contact Us</h2>
+    <p>Request a free quote or ask us a question:</p>
+    <p><strong>Call us:</strong> <a href="tel:+610401544111" style="color:#ff5733;">0401 544 111</a></p>
+    <p><strong>Email:</strong> <a href="mailto:enquiries@sitenstrata.com" style="color:#ff5733;">enquiries@sitenstrata.com</a></p>
+
+    <form action="https://formsubmit.co/enquiries@sitenstrata.com" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="https://www.yourwebsite.com/thank-you.html">
+    </form>
+</section>
 
     <footer>
         <p>&copy; Site &amp; Strata - Renovation & Maintenance. All rights reserved.</p>
