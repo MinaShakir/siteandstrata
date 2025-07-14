@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any"> 
-    <link rel="icon" href="/icon.svg" type="image/svg+xml"> 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
-    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Site & Strata Solutions | Expert Renovation & Maintenance in all Perth regions</title>
     <meta name="description" content="Expert commercial, residential, and strata building maintenance, renovations, and NDIS services in all Perth regions since 2010. Get a free quote today for reliable, quality work.">
     <meta name="keywords" content="commercial maintenance Perth, residential renovations Perth, strata solutions WA, building maintenance Western Australia, NDIS home modifications Perth, renovation contractors Perth, Perth building repair, site solutions, strata maintenance">
@@ -26,7 +26,7 @@
     <meta name="twitter:title" content="Site & Strata Solutions | Expert Renovation & Maintenance in Perth WA">
     <meta name="twitter:description" content="Expert commercial, residential, and strata building maintenance, renovations, and NDIS services in all Perth regions since 2010.">
     <meta name="twitter:image" content="https://sitenstrata.com/images/twitter-preview.jpg">
-    <meta name="twitter:creator" content="@YourTwitterHandle" /> 
+    <meta name="twitter:creator" content="@YourTwitterHandle" />
     <link rel="canonical" href="https://sitenstrata.com/"><style>
         /* General Body Styles */
         body {
@@ -51,8 +51,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex-direction: column; /* Stack logo and text vertically */
             border-radius: 8px; /* Rounded corners */
+            margin-bottom: 1rem; /* Add some space below the logo section */
+        }
+
+        /* Logo Styling */
+        .site-logo {
+            max-width: 200px; /* Adjust the maximum width of your logo as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 1rem; /* Space between logo and text */
+            display: block; /* Ensures it takes up its own line and respects margin auto */
+            margin-left: auto; /* Center the logo */
+            margin-right: auto; /* Center the logo */
         }
 
         .logo-text h1 {
@@ -440,7 +451,7 @@
         }
 
         /* ==================================== */
-        /* RESPONSIVE DESIGN                     */
+        /* RESPONSIVE DESIGN                      */
         /* ==================================== */
 
         /* Tablets and smaller desktops (max-width: 768px) */
@@ -451,6 +462,11 @@
 
             header {
                 padding: 1.5rem;
+            }
+
+            /* Adjust logo size on tablets */
+            .site-logo {
+                max-width: 150px; /* Smaller logo for tablets */
             }
 
             .logo-text h1 {
@@ -556,6 +572,11 @@
 
             header {
                 padding: 1rem;
+            }
+
+            /* Adjust logo size on mobile */
+            .site-logo {
+                max-width: 100px; /* Even smaller logo for mobile */
             }
 
             .logo-text h1 {
@@ -711,7 +732,7 @@
         section#portfolio p a.contact-cta-link:hover {
             color: #FFA07A;
         }
-         .social-media-icons {
+        .social-media-icons {
             margin-top: 20px; /* Add some space above the icons */
             text-align: center; /* Center them if you want */
         }
@@ -739,6 +760,8 @@
 
     <header>
         <div class="logo-section">
+            <a href="index.html"> <img src="path/to/your/logo.png" alt="Site & Strata Solutions Logo" class="site-logo">
+            </a>
             <div class="logo-text">
                 <h1>SITE &amp; STRATA</h1>
                 <h2>SOLUTIONS</h2>
