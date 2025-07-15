@@ -1,960 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Site & Strata Solutions | Expert Renovation & Maintenance in all Perth regions</title>
-    <meta name="description" content="Expert commercial, residential, and strata building maintenance, renovations, and NDIS services in all Perth regions since 2010. Get a free quote today for reliable, quality work.">
-    <meta name="keywords" content="commercial maintenance Perth, residential renovations Perth, strata solutions WA, building maintenance Western Australia, NDIS home modifications Perth, renovation contractors Perth, Perth building repair, site solutions, strata maintenance">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitenstrata.com/">
-    <meta property="og:title" content="Site & Strata Solutions | Expert Renovation & Maintenance in Perth WA">
-    <meta property="og:description" content="Expert commercial, residential, and strata building maintenance, renovations, and NDIS services in all Perth regions since 2010.">
-    <meta property="og:image" content="https://sitenstrata.com/images/share-preview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Site & Strata Solutions">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://sitenstrata.com/">
-    <meta name="twitter:title" content="Site & Strata Solutions | Expert Renovation & Maintenance in Perth WA">
-    <meta name="twitter:description" content="Expert commercial, residential, and strata building maintenance, renovations, and NDIS services in all Perth regions since 2010.">
-    <meta name="twitter:image" content="https://sitenstrata.com/images/twitter-preview.jpg">
-    <meta name="twitter:creator" content="@YourTwitterHandle" />
-    <link rel="canonical" href="https://sitenstrata.com/"><style>
-        /* General Body Styles */
-        body {
-            font-family: 'Inter', Arial, sans-serif; /* Using Inter for a modern look */
-            margin: 0;
-            line-height: 1.6;
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* White text */
-            -webkit-font-smoothing: antialiased; /* Smoother font rendering */
-            -moz-osx-smoothing: grayscale;
-        }
-
-        /* Header Styles */
-        header {
-            background: #1a1a1a; /* Slightly lighter dark background */
-            padding: 2rem;
-            text-align: center;
-        }
-
-        /* Logo Section Styling */
-        .logo-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Stack logo and text vertically */
-            border-radius: 8px; /* Rounded corners */
-            margin-bottom: 1rem; /* Add some space below the logo section */
-        }
-
-        /* Logo Styling */
-        .site-logo {
-            max-width: 200px; /* Adjust the maximum width of your logo as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 1rem; /* Space between logo and text */
-            display: block; /* Ensures it takes up its own line and respects margin auto */
-            margin-left: auto; /* Center the logo */
-            margin-right: auto; /* Center the logo */
-        }
-
-        .logo-text h1 {
-            color: #ff5733; /* Accent color */
-            font-size: 3rem; /* Increased size */
-            margin: 0;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
-        }
-
-        .logo-text h2 {
-            color: #ffffff;
-            font-size: 1.8rem; /* Increased size */
-            margin: 0.3rem 0;
-            font-weight: normal;
-        }
-
-        .est-abn {
-            color: #999999;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Services Banner Styling */
-        .services-banner {
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #1a1a1a;
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        }
-
-        .title-box {
-            border: 2px solid #ff5733;
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            font-weight: bold;
-            color: #ff5733;
-            font-size: 0.9rem; /* Reduced size */
-            margin-bottom: 1rem;
-            border-radius: 5px; /* Rounded corners for the box */
-        }
-
-        .services-banner h3 {
-            color: #ff5733;
-            font-size: 1.3rem; /* Reduced size */
-            margin: 0.5rem 0;
-        }
-
-        .service-list {
-            display: flex;
-            flex-wrap: wrap; /* Allows items to wrap to the next line */
-            justify-content: center;
-            margin: 1rem 0;
-            padding: 0; /* Remove default padding */
-            list-style: none; /* Remove list bullets */
-        }
-
-        .service-list span {
-            margin: 0 10px;
-            font-weight: bold;
-            color: #ffffff;
-            border-right: 2px solid #ff5733;
-            padding-right: 10px;
-            white-space: nowrap; /* Prevent individual service names from breaking */
-            font-size: 0.9rem; /* Set base font size for consistency */
-            border-radius: 4px; /* Rounded corners */
-        }
-
-        .service-list span:last-child {
-            border-right: none; /* No border for the last item */
-        }
-
-        .footer-line {
-            color: #ff5733;
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-
-        .emergency {
-            margin-top: 0.5rem;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background: #1a1a1a;
-            padding: 1rem; /* Increased padding */
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for separation */
-        }
-
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.8rem 1.2rem; /* Increased padding */
-            font-size: 1.1rem; /* Increased font size */
-            border-radius: 5px; /* Rounded buttons */
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
-
-        nav a:hover {
-            background-color: #ff5733; /* Highlight on hover */
-        }
-
-        /* Section Styling */
-        section {
-            padding: 2rem;
-            background: #121212;
-            color: #ffffff;
-            margin-bottom: 0.5rem; /* Small margin between sections */
-            border-radius: 8px; /* Consistent rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
-            text-align: center; /* This will center all inline and inline-block content inside sections by default */
-        }
-
-        section:nth-of-type(even) { /* Alternate background for better visual separation */
-            background-color: #1a1a1a;
-        }
-
-        h2 {
-            color: #ff5733;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            border-bottom: 2px solid #ff5733; /* Underline effect */
-            padding-bottom: 0.5rem;
-            display: inline-block; /* Make underline fit text width */
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 4px; /* Rounded corners for underline */
-        }
-
-        p {
-            margin-bottom: 1rem;
-            max-width: 800px; /* Limit paragraph width for better reading flow */
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 0.95rem; /* Adjusted paragraph size for desktop */
-        }
-
-        /* NDIS Section specific styles (overridden for distinct look) */
-        #ndis {
-            background-color: #f5f5f5;
-            color: #222;
-            padding: 2rem;
-            text-align: center; /* Explicitly centered here for consistency */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 0.5rem auto; /* Center the section */
-            max-width: 90%; /* Max width for consistency */
-        }
-
-        /* NDIS content wrapper for max-width and margin auto */
-        .ndis-content-wrapper {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        #ndis h2 {
-            color: #6b2c91;
-            border-color: #6b2c91;
-            font-size: 1.8rem;
-        }
-
-        #ndis img {
-            width: 150px; /* Specific width for NDIS logo */
-            margin-bottom: 1rem;
-            max-width: 100%; /* Ensure it scales down on smaller screens */
-            height: auto;
-        }
-
-        #ndis p {
-            font-size: 1rem; /* Adjusted NDIS paragraph size for desktop */
-            line-height: 1.6;
-        }
-
-        #ndis a {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.6rem 1.2rem;
-            background-color: #6b2c91;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            cursor: pointer; /* Ensure link is visually recognized as clickable */
-        }
-
-        #ndis a:hover {
-            background-color: #5a257a;
-        }
-
-        /* Maintenance Section */
-        .maintenance-section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .maintenance-section h2 {
-            font-size: 28px;
-            color: #ff5733;
-            margin-bottom: 30px;
-        }
-
-        .maintenance-boxes {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap; /* Allow boxes to wrap */
-        }
-
-        .maintenance-box {
-            background-color: #1a1a1a;
-            padding: 20px;
-            border-radius: 10px;
-            width: 45%; /* Responsive width */
-            min-width: 280px; /* Minimum width, adjusted by media queries */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            box-sizing: border-box; /* Include padding/border in width */
-        }
-
-        .maintenance-box ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            text-align: left; /* Keep list items left-aligned for readability */
-        }
-
-        .maintenance-box li {
-            margin-bottom: 10px;
-            font-size: 16px;
-            color: #ffffff;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            /* This is now covered by the general section rule */
-        }
-
-        .portfolio-item {
-            margin-bottom: 2rem;
-            background-color: #1a1a1a;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .portfolio-item p {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-            color: #cccccc;
-            text-align: center; /* Explicitly centered here for consistency */
-            max-width: 600px; /* Limit width for centered text */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Gallery image adjustments for full visibility and uniform width */
-        .image-pair-gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 1rem;
-        }
-
-        .image-pair-gallery img {
-            width: calc(50% - 10px); /* Adjust width for two images side-by-side with gap */
-            height: auto; /* Allow height to adjust automatically based on aspect ratio */
-            max-width: 350px; /* Max individual width */
-            max-height: 250px; /* Optional: constrain max height */
-            object-fit: contain; /* Ensures entire image is visible, no cropping */
-            margin: 0; /* Remove existing margins */
-            background-color: #000; /* Optional: Add a background color to see the uniform box if image doesn't fill it */
-            flex-grow: 1; /* Allow images to grow to fill available space in flex container */
-            flex-shrink: 1; /* Allow images to shrink if space is limited */
-            flex-basis: calc(50% - 10px); /* Initial size consideration */
-        }
-
-        .walkway-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit columns, min 300px, max 1fr */
-            gap: 15px;
-            justify-items: center;
-            margin-top: 1rem;
-        }
-
-        .walkway-gallery img {
-            width: 100%; /* Fill grid cell */
-            height: auto; /* Allow height to adjust automatically based on aspect ratio */
-            max-width: 350px; /* Max individual width within grid cell */
-            max-height: 250px; /* Optional: constrain max height */
-            object-fit: contain; /* Ensures entire image is visible, no cropping */
-            margin: 0; /* Remove existing margins */
-            background-color: #000; /* Optional: Add a background color to see the uniform box if image doesn't fill it */
-        }
-
-        /* Testimonials Section */
-        .testimonial {
-            margin-bottom: 1rem;
-            padding: 1.5rem;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            font-style: italic;
-            color: #cccccc;
-            text-align: center; /* Explicitly centered here for consistency */
-            max-width: 800px; /* Limit width for centered text */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Contact Form */
-        #contact p {
-            text-align: center; /* Explicitly centered here for consistency */
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 500px; /* Increased max-width for better desktop form layout */
-            margin: auto;
-            padding: 1rem;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        input,
-        textarea {
-            margin: 0.5rem 0;
-            padding: 0.8rem; /* Increased padding for better touch targets */
-            background-color: #333333;
-            border: 1px solid #ff5733;
-            color: #ffffff;
-            border-radius: 5px; /* Rounded input fields */
-            outline: none; /* Remove outline on focus */
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            color: #aaaaaa;
-        }
-
-        input:focus,
-        textarea:focus {
-            border-color: #e74c3c; /* Change border color on focus */
-        }
-
-        button {
-            background-color: #ff5733;
-            color: white;
-            border: none;
-            padding: 0.75rem;
-            cursor: pointer;
-            font-weight: bold;
-            border-radius: 5px; /* Rounded button */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
-        }
-
-        button:hover {
-            background-color: #e74c3c;
-            transform: translateY(-2px); /* Slight lift on hover */
-        }
-
-        button:active {
-            transform: translateY(0); /* Return to normal on click */
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center; /* Center align footer content */
-            background: #1a1a1a;
-            padding: 1.5rem;
-            color: #ffffff;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-            border-radius: 8px; /* Consistent rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* ==================================== */
-        /* RESPONSIVE DESIGN                      */
-        /* ==================================== */
-
-        /* Tablets and smaller desktops (max-width: 768px) */
-        @media (max-width: 768px) {
-            body {
-                font-size: 15px; /* Slightly smaller base font size */
-            }
-
-            header {
-                padding: 1.5rem;
-            }
-
-            /* Adjust logo size on tablets */
-            .site-logo {
-                max-width: 150px; /* Smaller logo for tablets */
-            }
-
-            .logo-text h1 {
-                font-size: 2.5rem; /* Adjust header font size */
-            }
-
-            .logo-text h2 {
-                font-size: 1.5rem; /* Adjust header font size */
-            }
-
-            .services-banner {
-                margin-top: 1.5rem;
-                padding: 1rem;
-            }
-
-            .title-box {
-                font-size: 0.8rem; /* Reduced for tablet */
-                padding: 0.3rem 0.8rem;
-            }
-
-            .services-banner h3 {
-                font-size: 1.1rem; /* Reduced for tablet */
-            }
-
-            .service-list span {
-                margin: 0 8px; /* Reduce margin for service list items */
-                padding-right: 8px;
-                font-size: 0.8rem; /* Reduced for tablet */
-            }
-
-            nav {
-                padding: 0.8rem; /* Adjusted for tablet */
-            }
-
-            nav a {
-                margin: 0 10px; /* Reduce navigation link margin */
-                padding: 0.6rem 1rem; /* Adjusted for tablet */
-                font-size: 1rem; /* Adjusted for tablet */
-            }
-
-            section {
-                padding: 1.5rem;
-            }
-
-            h2 {
-                font-size: 1.8rem; /* Adjust section header font size */
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 0.95rem; /* Adjusted paragraph size for tablet */
-            }
-
-            #ndis p {
-                font-size: 1rem; /* Adjusted NDIS paragraph size for tablet */
-            }
-
-            .portfolio-item p {
-                font-size: 1rem;
-            }
-
-
-            .maintenance-box {
-                width: calc(50% - 10px); /* Make maintenance boxes two columns on tablets */
-                min-width: unset; /* Remove min-width restriction */
-            }
-            .maintenance-boxes {
-                justify-content: center; /* Center the boxes */
-            }
-
-
-            .portfolio-item img {
-                margin: 5px; /* Reduce margin around portfolio images */
-            }
-
-            /* Responsive adjustments for image galleries */
-            .image-pair-gallery img {
-                width: calc(50% - 8px); /* Make images take 50% width with gap */
-                max-width: unset; /* Remove max-width to allow full 50% width */
-            }
-            .image-pair-gallery {
-                flex-direction: row; /* Keep images in a row on tablets */
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px; /* Adjust gap */
-            }
-
-            .walkway-gallery {
-                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
-                gap: 10px; /* Adjust gap */
-            }
-            .walkway-gallery img {
-                width: 100%; /* Fill grid cell */
-                max-width: unset; /* Remove max-width for better column fill */
-            }
-        }
-
-        /* Mobile devices (max-width: 480px) */
-        @media (max-width: 480px) {
-            body {
-                font-size: 14px; /* Even smaller base font size */
-            }
-
-            header {
-                padding: 1rem;
-            }
-
-            /* Adjust logo size on mobile */
-            .site-logo {
-                max-width: 100px; /* Even smaller logo for mobile */
-            }
-
-            .logo-text h1 {
-                font-size: 1.4rem; /* Further adjust header font size for smaller screens */
-            }
-
-            .logo-text h2 {
-                font-size: 0.9rem; /* Further adjust header font size for smaller screens */
-            }
-
-            .est-abn {
-                font-size: 0.7rem; /* Adjusted for smaller screens */
-            }
-
-            .services-banner {
-                margin-top: 1rem;
-                padding: 0.5rem; /* Reduced padding for smaller screens */
-            }
-
-            .title-box {
-                font-size: 0.6rem; /* Reduced for mobile */
-                padding: 0.2rem 0.4rem; /* Reduced padding */
-                margin-bottom: 0.5rem; /* Reduced margin */
-            }
-
-            .services-banner h3 {
-                font-size: 0.8rem; /* Reduced for mobile */
-                margin: 0.3rem 0; /* Reduced margin */
-            }
-
-            .service-list {
-                display: flex; /* Keep flex display */
-                flex-wrap: wrap; /* Allow wrapping */
-                justify-content: center; /* Center items */
-                margin: 0.6rem 0; /* Reduced margin */
-                padding: 0;
-                list-style: none;
-            }
-
-            .service-list span {
-                margin: 3px 6px; /* Adjusted spacing for wrapped items */
-                padding-right: 6px; /* Adjusted padding */
-                border-right: 1px solid #ff5733; /* Keep border for separation */
-                white-space: nowrap;
-                font-size: 0.65rem; /* Reduced for mobile */
-            }
-            .service-list span:last-child {
-                border-right: none; /* No border for the last item */
-            }
-
-            .footer-line, .emergency {
-                font-size: 0.7rem; /* Reduced for mobile */
-                margin-top: 0.3rem; /* Adjusted margin */
-            }
-
-
-            nav {
-                padding: 0.3rem; /* Adjusted for mobile */
-            }
-
-            nav a {
-                display: inline-block; /* Changed to inline-block for side-by-side but allows wrapping */
-                margin: 4px; /* Adjusted spacing */
-                padding: 0.3rem 0.5rem; /* Adjusted for mobile */
-                font-size: 0.8rem; /* Adjusted for mobile */
-            }
-
-            section {
-                padding: 0.8rem; /* Reduced section padding */
-            }
-
-            h2 {
-                font-size: 1.3rem; /* Smallest section header font size */
-                margin-bottom: 0.8rem; /* Reduced margin */
-                padding-bottom: 0.3rem; /* Adjusted padding */
-                border-bottom: 1px solid #ff5733; /* Thinner border */
-            }
-
-            p {
-                font-size: 0.8rem; /* Adjusted general paragraph size for mobile */
-            }
-
-            #ndis p {
-                font-size: 0.85rem; /* Adjusted NDIS paragraph size for mobile */
-            }
-
-            .portfolio-item p {
-                font-size: 0.95rem; /* Slightly reduced portfolio paragraph size */
-            }
-
-            .maintenance-box {
-                padding: 12px; /* Reduced padding */
-                width: calc(50% - 10px); /* Make maintenance boxes side-by-side */
-            }
-
-            .maintenance-box ul {
-                padding-left: 12px; /* Reduced padding */
-            }
-
-            .maintenance-box li {
-                font-size: 14px; /* Reduced font size */
-            }
-
-            .portfolio-item {
-                padding: 0.8rem; /* Reduced padding */
-            }
-
-            /* Adjust image galleries for side-by-side on mobile */
-            .image-pair-gallery {
-                flex-direction: row; /* Display images in a row */
-                flex-wrap: wrap; /* Allow them to wrap if space is too tight */
-                justify-content: center; /* Center the image pairs */
-                gap: 8px; /* Slightly reduce gap for small screens */
-            }
-
-            .image-pair-gallery img {
-                width: calc(50% - 8px); /* Make images take 50% width with gap */
-                max-width: unset; /* Remove max-width to allow full 50% width */
-            }
-
-            .walkway-gallery {
-                grid-template-columns: repeat(2, 1fr); /* Two columns for walkway gallery */
-                gap: 8px; /* Slightly reduce gap for small screens */
-            }
-            .walkway-gallery img {
-                width: 100%; /* Fill grid cell */
-                max-width: unset; /* Remove max-width for better column fill */
-            }
-
-
-            form {
-                padding: 0.6rem; /* Reduced padding */
-            }
-
-            input,
-            textarea {
-                padding: 0.5rem; /* Reduced padding */
-                font-size: 0.85rem; /* Reduced font size */
-            }
-
-            button {
-                padding: 0.5rem; /* Reduced padding */
-                font-size: 0.9rem; /* Reduced font size */
-            }
-        }
-        section#portfolio p a.contact-cta-link {
-            color: #FF4500; /* OrangeRed */
-            font-weight: bold;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        section#portfolio p a.contact-cta-link:hover {
-            color: #FFA07A;
-        }
-        .social-media-icons {
-            margin-top: 20px; /* Add some space above the icons */
-            text-align: center; /* Center them if you want */
-        }
-
-        .social-media-icons img {
-            width: 35px;
-            height: 35px;
-            margin-right: 10px;
-            /* Add hover effects here if you want */
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-
-        .social-media-icons img:hover {
-            transform: scale(1.1); /* Slightly enlarge on hover */
-        }
-
-        /* Ensure smooth transitions for all elements */
-        * {
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site & Strata Solutions - Building Maintenance & Renovations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <header>
-        <div class="logo-section">
-            <a href="index.html"> <img src="sitenstratasolutionslogo.png" alt="Site & Strata Solutions Logo" class="site-logo">
-            </a>
-            <div class="logo-text">
-                <h1>SITE &amp; STRATA</h1>
-                <h2>SOLUTIONS</h2>
-                <div class="est-abn">
-                    <div>EST. 2010</div>
-                    <div>ABN 62 942 893 580</div>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-contact">
+                    <span><i class="fas fa-phone-alt"></i> 0401 544 111</span>
+                    <span><i class="fas fa-envelope"></i> maintenance@sitenstrata.com</span>
+                    <span><i class="fas fa-clock"></i> 24-Hour Emergency Service Available</span>
                 </div>
             </div>
         </div>
-
-        <div class="services-banner">
-            <div class="title-box">Building Maintenance Services</div>
-            <h3>COMMERCIAL &amp; RESIDENTIAL</h3>
-            <div class="service-list">
-                <span>REPAIRS</span>
-                <span>RENOVATIONS</span>
-                <span>MAINTENANCE</span>
-                <span>PAINTING</span>
-                <span>INSTALLATIONS</span>
-                <span>AND MORE</span>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="sitenstratasolutionslogosmall.png" alt="Site & Strata Solutions Logo">
+                    <div class="logo-text-wrapper">
+                        <h1>Site & Strata Solutions</h1>
+                        <h2>Building Maintenance and Renovations</h2>
+                    </div>
+                </a>
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#ndis">NDIS</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="footer-line">We're one call away with all your building needs!</div>
-            <div class="emergency">24 Hour Emergency Services</div>
-        </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-    <h2>About Site & Strata Solutions</h2>
-    <p>
-        Site and Strata Solutions Pty Ltd is a family-owned business specializing in commercial and residential building maintenance and renovation services across all Perth regions. Established since 2010, we proudly deliver a full range of building trade services throughout all Perth regions.
-    </p>
-    <p>
-        With over a decade of industry experience, Site and Strata Solutions is committed to providing high-quality, reliable, and competitively priced services. We are fully licensed and insured, catering to a diverse client base including homeowners, government agencies, real estate firms, strata management companies, and commercial enterprises.
-    </p>
-    <p>
-        While we specialize in comprehensive project management and coordination, we act as your one-stop point of contact, working closely with a trusted network of licensed trades, including tilers, electricians, and plumbers, to ensure all aspects of your project are covered seamlessly. Our team also includes highly qualified and licensed painters and carpenters, ensuring expert craftsmanship in these key areas.
-    </p>
-    <p>
-        Our reputation is built on integrity, quality workmanship, and dependable service — values that continue to guide everything we do.
-    </p>
-</section>
-
-<section id="ndis">
-    <div class="ndis-content-wrapper">
-        <img src="NDISlogo.png" alt="NDIS Logo" onerror="this.onerror=null;this.src='https://placehold.co/150x50/6b2c91/ffffff?text=NDIS+Logo';">
-        <h2>Registered NDIS Provider in Perth</h2>
-        <p>Site &amp; Strata Solutions is proud to be a <strong>Registered NDIS Provider</strong>, delivering essential building maintenance and home modification services that support the safety, independence, and comfort of individuals with disabilities across Perth and surrounding regions.</p>
-        <p style="margin-top: 1rem;">
-            We work closely with participants, families, and support coordinators to provide reliable and tailored property solutions that align with NDIS plan goals, including accessible bathroom renovations, ramp installations, grab rail fitting, widening doorways, and general home adaptations.
-        </p>
-        <p><strong>NDIS Provider Number: 4-JD66R8N</strong></p>
-        <a href="https://www.ndis.gov.au/" target="_blank">
-            Learn More About the NDIS
-        </a>
-    </div>
-</section>
-
-<section id="services" class="maintenance-section">
-    <h2>Our Building Maintenance & Renovation Services</h2>
-    <div class="maintenance-boxes">
-        <div class="maintenance-box">
-            <h3>General & Emergency Maintenance</h3>
-            <ul>
-                <li>Painting (Interior & Exterior)</li>
-                <li>Make Safe / Emergency After Hours Services</li>
-                <li>Gutter Cleaning & Repairs / Replacements</li>
-                <li>Rubbish Removal</li>
-                <li>Ceiling Repairs / Replacements</li>
-            </ul>
-        </div>
-        <div class="maintenance-box">
-            <h3>Renovations & Installations</h3>
-            <ul>
-                <li>New Home Finishes</li>
-                <li>Complete Home Renovations (including kitchen & bathroom)</li>
-                <li>Kitchen Installations / Renovations</li>
-                <li>Door Installations & Repairs</li>
-                <li>Floating Floor Installation</li>
-                <li>Shop Fit Outs</li>
-                <li>Specialized Building Work</li>
-            </ul>
-        </div>
-    </div>
-    <p class="services-summary">And much more! We offer comprehensive solutions for all your commercial, residential, and strata building needs in all Perth regions.</p>
-</section>
-
-   <section id="portfolio" class="portfolio">
-    <h2>Project Gallery</h2>
-    <p>Explore our recent completed projects showcasing our expertise in commercial and residential renovations, maintenance, and specialized installations across Perth and Western Australia. See the quality craftsmanship and transformations we deliver!</p>
-
-    <div class="portfolio-item">
-        <h3>Kitchen Renovation – Before & After Perth</h3>
-        <p>From dated beige finishes to a clean, modern black-and-white design featuring sleek cabinets and improved layout. We specialize in modern kitchen renovations for Perth homes.</p>
-        <div class="image-pair-gallery">
-            <img src="Kitchenbefore.jpg" alt="Before kitchen renovation in Perth home" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="Kitchenafter.jpg" alt="After modern kitchen renovation in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Flooring Renovation – Before & After Perth</h3>
-        <p>We removed the worn-out carpet and replaced it with elegant, easy-to-maintain tiles. The result? A cleaner, more modern space with enhanced natural light and lasting durability. Our Perth flooring renovation services enhance aesthetics and value.</p>
-        <div class="image-pair-gallery">
-            <img src="Floorbefore.jpg" alt="Before old carpet flooring in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="Floorafter.jpg" alt="After new tile flooring installation in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Eaves Repair – Before & After Western Australia</h3>
-        <p>We repaired damaged eaves with cracks and holes, replacing them with clean, durable panels to restore safety and appearance. Trust us for expert eaves repair in all Perth regions.</p>
-        <div class="image-pair-gallery">
-            <img src="Eavesbefore.jpg" alt="Before damaged eaves needing repair in WA" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="Eavesafter.jpg" alt="After professional eaves repair in Western Australia" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Sink Replacement – Before & After Perth</h3>
-        <p>We replaced the damaged sink with a modern, stainless-steel fixture. The plumbing was updated for better water flow and long-term durability. Quality sink replacement and plumbing updates across Perth.</p>
-        <div class="image-pair-gallery">
-            <img src="Sinkbefore.jpg" alt="Before old kitchen sink replacement Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="Sinkafter.jpg" alt="After new stainless steel sink installation Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Walkway Safety Line Restoration – Before & After Perth</h3>
-        <p>Restored walkway safety lines with high-visibility markings to improve pedestrian guidance and workplace safety. Specializing in commercial line painting and safety marking for businesses in Perth.</p>
-        <div class="walkway-gallery">
-            <img src="linepaintbefore1.jpg" alt="Before commercial walkway line painting in Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="Linepaintafter1.jpg" alt="After commercial safety line marking in Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Accessible Ramp Replacement – Before & After Perth</h3>
-        <p>Replaced a worn-out access ramp to restore function, improve safety, and enhance appearance. Providing accessible ramp replacement and NDIS home modifications in Perth.</p>
-        <div class="image-pair-gallery">
-            <img src="rampbefore.jpg" alt="Before old wooden ramp replacement Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="rampafter.jpg" alt="After new accessible ramp installation Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Door Installation – Before & After Perth</h3>
-        <p>Installed a new door for improved security, function, and aesthetic appeal. Offering door installation and repair services for homes and businesses in Perth.</p>
-        <div class="image-pair-gallery">
-            <img src="doorbefore.jpg" alt="Before old door replacement Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-            <img src="doorafter.jpg" alt="After new door installation service Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
-        </div>
-    </div>
-
-   <p style="margin-top: 3rem;">Ready to see your own transformation? <a href="#contact" class="contact-cta-link">Contact Site & Strata Solutions for a free quote today!</a></p>
-</section>
-
-    <section id="testimonials" class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"A massive thank you to Site and Strata Solutions for your professional workmanship. Without hesitation we will pass on recommendations. We are very happy with our bathroom and laundry renovations that was stripped completely and renewed. Your reasonable quote came with honesty and peace of mind and this is what everyone is seeking for in these days! Thank you very very much you have in your team the Best Tiler, Best Electrician, Best Glazier and the best YOU! Thank you once again! We have peace of mind and enjoying the new look." – Rash and Sheedo</p>
-            <p>"Fantastic experience with Marmina. Was available at a short notice but also super flexible with timing! Will be contacting fpr any future work needed at my property. Thanks again!!." - Kiah Pereira </p>
-            <p>"Highly recommend Site & Strata Solutions for any handyman or carpentry work! Reliable, professional, and efficient. The quality of work was excellent—clean, precise, and exactly what I needed. Will definitely be using their services again." - Rana Mosleh</p>
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Maintenance & Renovations</h1>
+                <p class="hero-subtitle">COMMERCIAL & RESIDENTIAL</p>
+                <p class="hero-description">We're one call away with all your building needs! Providing 24-Hour Emergency Services.</p>
+                <a href="#contact" class="btn-primary">Get a Free Quote</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Request a free quote or ask us a question:</p>
-    <p><strong>Call us:</strong> <a href="tel:+610401544111" style="color:#ff5733;">0401 544 111</a></p>
-    <p><strong>Email:</strong> <a href="mailto:enquiries@sitenstrata.com" style="color:#ff5733;">enquiries@sitenstrata.com</a></p>
-    </form>
-</section>
+    <section id="services" class="services-overview">
+        <div class="container">
+            <h2>Our Comprehensive Services</h2>
+            <div class="service-list-grid">
+                <div>
+                    <h3>Repairs</h3>
+                    <p>From minor fixes to major structural repairs, we handle all types of building damage efficiently.</p>
+                </div>
+                <div>
+                    <h3>Renovations</h3>
+                    <p>Transform your space with our expert renovation services, tailored to your vision and needs.</p>
+                </div>
+                <div>
+                    <h3>Maintenance</h3>
+                    <p>Proactive and reactive maintenance services to keep your property in top condition year-round.</p>
+                </div>
+                <div>
+                    <h3>Painting</h3>
+                    <p>Professional interior and exterior painting services for a fresh, durable finish.</p>
+                </div>
+                <div>
+                    <h3>Installations</h3>
+                    <p>Expert installation of fixtures, fittings, and new structures with precision and quality.</p>
+                </div>
+                <div>
+                    <h3>NDIS Home Modifications</h3>
+                    <p>Registered NDIS provider for accessible home modifications, ensuring safety and independence.</p>
+                </div>
+                <div>
+                    <h3>And More</h3>
+                    <p>Contact us for any other building needs; if it involves building, we can help!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; Site &amp; Strata - Renovation & Maintenance. All rights reserved.</p>
-        <p style="margin-top: 5px; color: #ff5733;">Registered NDIS Provider <span style="color: white; margin-left: 10px;">(Provider No: 4-JD66R8N)</span></p>
- <div class="social-media-icons">
-    <a href="https://www.facebook.com/siteandstratasolutions" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-        <img src="facebooklogo.png" alt="Facebook icon" style="width: 35px; height: 35px; margin-right: 10px;">
-    </a>
-    <a href="https://www.instagram.com/sitestratasolutions" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-        <img src="instagramlogo.jpg" alt="Instagram icon" style="width: 35px; height: 35px; margin-right: 10px;">
-    </a>
-</div>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Site & Strata Solutions</h2>
+            <p>Site and Strata Solutions Pty Ltd is a family-owned business specializing in commercial and residential building maintenance and renovation services across all Perth regions. Established since 2010, we proudly deliver a full range of building trade services throughout all Perth regions.</p>
+            <p>With over a decade of industry experience, Site and Strata Solutions is committed to providing high-quality, reliable, and competitively priced services. We are fully licensed and insured, catering to a diverse client base including homeowners, government agencies, real estate firms, strata management companies, and commercial enterprises.</p>
+            <p>While we specialize in comprehensive project management and coordination, we act as your one-stop point of contact, working closely with a trusted network of licensed trades, including tilers, electricians, and plumbers, to ensure all aspects of your project are covered seamlessly. Our team also includes highly qualified and licensed painters and carpenters, ensuring expert craftsmanship in these key areas.</p>
+            <p>Our reputation is built on integrity, quality workmanship, and dependable service — values that continue to guide everything we do.</p>
+        </div>
+    </section>
+
+    <section id="ndis" class="ndis-section">
+        <div class="container">
+            <div class="ndis-content-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/National_Disability_Insurance_Scheme_logo.svg/1200px-National_Disability_Insurance_Scheme_logo.svg.png" alt="NDIS Logo">
+                <h2>Registered NDIS Provider in Perth</h2>
+                <p>We work closely with participants, families, and support coordinators to provide reliable and tailored property solutions that align with NDIS plan goals, including accessible bathroom renovations, ramp installations, grab rail fitting, widening doorways, and general home modifications.</p>
+                <p><strong>NDIS Provider Number: 4-JD66R8N</strong></p>
+                <a href="#contact" class="btn-primary">Enquire About NDIS Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Project Gallery</h2>
+            <p>Explore our recent completed projects showcasing our expertise in commercial and residential renovations, maintenance, and specialized installations across Perth and Western Australia. See the quality craftsmanship and transformations we deliver!</p>
+
+            <div class="portfolio-item">
+                <h3>Kitchen Renovation – Before & After Perth</h3>
+                <p>From dated beige finishes to a clean, modern black-and-white design featuring sleek cabinets and improved layout. We specialize in modern kitchen renovations for Perth homes.</p>
+                <div class="image-pair-gallery">
+                    <img src="Kitchenbefore.jpg" alt="Before kitchen renovation in Perth home" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="Kitchenafter.jpg" alt="After modern kitchen renovation in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Flooring Renovation – Before & After Perth</h3>
+                <p>We removed the worn-out carpet and replaced it with elegant, easy-to-maintain tiles. The result? A cleaner, more modern space with enhanced natural light and lasting durability. Our Perth flooring renovation services enhance aesthetics and value.</p>
+                <div class="image-pair-gallery">
+                    <img src="Floorbefore.jpg" alt="Before old carpet flooring in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="Floorafter.jpg" alt="After new tile flooring installation in Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Eaves Repair – Before & After Western Australia</h3>
+                <p>We repaired damaged eaves with cracks and holes, replacing them with clean, durable panels to restore safety and appearance. Trust us for expert eaves repair in all Perth regions.</p>
+                <div class="image-pair-gallery">
+                    <img src="Eavesbefore.jpg" alt="Before damaged eaves needing repair in WA" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="Eavesafter.jpg" alt="After professional eaves repair in Western Australia" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Sink Replacement – Before & After Perth</h3>
+                <p>We replaced the damaged sink with a modern, stainless-steel fixture. The plumbing was updated for better water flow and long-term durability. Quality sink replacement and plumbing updates across Perth.</p>
+                <div class="image-pair-gallery">
+                    <img src="Sinkbefore.jpg" alt="Before old kitchen sink replacement Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="Sinkafter.jpg" alt="After new stainless steel sink installation Perth" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Walkway Safety Line Restoration – Before & After Perth</h3>
+                <p>Restored walkway safety lines with high-visibility markings to improve pedestrian guidance and workplace safety. Specializing in commercial line painting and safety marking for businesses in Perth.</p>
+                <div class="walkway-gallery">
+                    <img src="linepaintbefore1.jpg" alt="Before commercial walkway line painting in Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="Linepaintafter1.jpg" alt="After commercial safety line marking in Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Accessible Ramp Replacement – Before & After Perth</h3>
+                <p>Replaced a worn-out access ramp to restore function, improve safety, and enhance appearance. Providing accessible ramp replacement and NDIS home modifications in Perth.</p>
+                <div class="image-pair-gallery">
+                    <img src="rampbefore.jpg" alt="Before old wooden ramp replacement Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="rampafter.jpg" alt="After new accessible ramp installation Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Door Installation – Before & After Perth</h3>
+                <p>Installed a new door for improved security, function, and aesthetic appeal. Offering door installation and repair services for homes and businesses in Perth.</p>
+                <div class="image-pair-gallery">
+                    <img src="doorbefore.jpg" alt="Before old door replacement Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                    <img src="doorafter.jpg" alt="After new door installation service Perth" class="project-img" onerror="this.onerror=null;this.src='https://placehold.co/350x250/1e1e1e/ffffff?text=Image+Not+Found';">
+                </div>
+            </div>
+
+           <p style="margin-top: 3rem;">Ready to see your own transformation? <a href="#contact" class="contact-cta-link">Contact Site & Strata Solutions for a free quote today!</a></p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"A massive thank you to Site and Strata Solutions for your professional workmanship. Without hesitation we will pass on recommendations. We are very happy with our bathroom and laundry renovations that was stripped completely and renewed. Your reasonable quote came with honesty and peace of mind and this is what everyone is seeking for in these days! Thank you very very much you have in your team the Best Tiler, Best Electrician, Best Glazier and the best YOU! Thank you once again! We have peace of mind and enjoying the new look."</p>
+                    <p class="testimonial-author">- Rash and Sheedo</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Fantastic experience with Marmina. Was available at a short notice but also super flexible with timing! Will be contacting fpr any future work needed at my property. Thanks again!!."</p>
+                    <p class="testimonial-author">- Kiah Pereira </p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Highly recommend Site & Strata Solutions for any handyman or carpentry work! Reliable, professional, and efficient. The quality of work was excellent—clean, precise, and exactly what I needed. Will definitely be using their services again."</p>
+                    <p class="testimonial-author">- Rana Mosleh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us with any inquiries or to request a quote.</p>
+
+            <p><strong>Location:</strong> Serving All Perth Regions, WA</p>
+            <p><strong>Phone:</strong> <a href="tel:0401544111">0401 544 111</a></p>
+            <p><strong>Email:</strong> <a href="mailto:maintenance@sitenstrata.com">maintenance@sitenstrata.com</a></p>
+            <p><strong>24-Hour Emergency Service Available</strong></p>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="logo-footer">
+                        <img src="sitenstratasolutionslogosmall.png" alt="Site & Strata Solutions Logo">
+                        <div class="logo-text-wrapper">
+                            <h3>Site & Strata Solutions</h3>
+                            <h4>Building Maintenance and Renovations</h4>
+                        </div>
+                    </a>
+                    <p class="footer-about-text">Specializing in commercial, residential, and strata building maintenance & renovations across Perth regions since 2010. Quality, reliability, and expertise in every project.</p>
+                    <p class="est-abn-footer">EST. 2010 | ABN: 12 345 678 901</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Repairs & Maintenance</a></li>
+                        <li><a href="#services">Renovations & Painting</a></li>
+                        <li><a href="#services">Installations</a></li>
+                        <li><a href="#ndis">NDIS Home Modifications</a></li>
+                        <li><a href="#">Emergency Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Our Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contact-info-footer">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving All Perth Regions, WA</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:0401544111">0401 544 111</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:maintenance@sitenstrata.com">maintenance@sitenstrata.com</a></p>
+                    <p><i class="fas fa-clock"></i> 24-Hour Emergency Service Available</p>
+                    <div class="social-links">
+                        
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Site & Strata Solutions. All rights reserved.</p>
+                <p class="ndis-provider-footer">Registered NDIS Provider | <span class="ndis-provider-no">NDIS Provider No: 4-JD66R8N</span></p>
+            </div>
+        </div>
     </footer>
 
+    <div class="cookie-consent" id="cookieConsent">
+        <p>We use cookies to improve your experience. By continuing to use our website, you agree to our <a href="#">privacy policy</a>.</p>
+        <button class="cookie-accept-btn" id="acceptCookies">Got It!</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu after clicking a link
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburgerMenu.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            // Mobile Navigation Toggle
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const isExpanded = navLinks.classList.contains('active');
+                hamburgerMenu.setAttribute('aria-expanded', isExpanded);
+            });
+
+            // Set active class on scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLi = document.querySelectorAll('.nav-links li a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) { // Adjust offset as needed
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLi.forEach(a => {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href').includes(current)) {
+                        a.classList.add('active');
+                    }
+                });
+            });
+
+            // Cookie Consent
+            const cookieConsent = document.getElementById('cookieConsent');
+            const acceptCookiesBtn = document.getElementById('acceptCookies');
+
+            // Check if cookie consent has been given
+            if (!localStorage.getItem('cookieConsentGiven')) {
+                cookieConsent.style.display = 'flex';
+            }
+
+            acceptCookiesBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsentGiven', 'true');
+                cookieConsent.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
