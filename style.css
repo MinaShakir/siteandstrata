@@ -697,6 +697,13 @@ section {
     opacity: 1;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px; /* Adds space between icons */
+    justify-content: center; /* Centers them horizontally if `social-icons` is wider than its content */
+    align-items: center; /* Aligns them vertically if they have different heights */
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
