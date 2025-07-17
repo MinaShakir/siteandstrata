@@ -686,22 +686,26 @@ section {
     /* justify-content: center; */
 }
 
-.social-links a {
-    font-size: 1.5em;
-    color: var(--text-light); /* Social icons are light */
-    opacity: 0.8;
+/* First, define the size for your social media logos */
+.social-logo {
+    width: 30px; /* Or 24px, 40px, whatever size looks good to you */
+    height: auto; /* This maintains the image's aspect ratio */
+    display: block; /* Ensures they behave as blocks for consistent sizing within the link */
 }
 
-.social-links a:hover {
-    color: var(--secondary-color);
-    opacity: 1;
-}
-
+/* Now, style their container to place them correctly */
 .social-icons {
-    display: flex;
-    gap: 15px; /* Adds space between icons */
-    justify-content: center; /* Centers them horizontally if `social-icons` is wider than its content */
-    align-items: center; /* Aligns them vertically if they have different heights */
+    display: flex; /* Makes the anchor tags (containing the images) display in a row */
+    align-items: center; /* Vertically aligns them if they were different heights (useful if text was also present) */
+    /*
+     * For horizontal alignment:
+     * - If you want them left-aligned within .social-icons: DO NOT add 'justify-content: center;'
+     * - 'justify-content: flex-start;' is the default for flex containers, meaning left-aligned.
+     */
+    justify-content: flex-start; /* Explicitly left-aligns them if needed */
+    gap: 10px; /* Adds space between the icons themselves */
+    margin-top: 15px; /* Add some space above the social icons if you want to separate them from the contact info */
+    /* You might also need to adjust the width of .contact-info-footer if it's too narrow */
 }
 
 .footer-bottom {
