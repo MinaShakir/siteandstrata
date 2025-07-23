@@ -10,6 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Your Business Name",
+      "telephone": "+61 8 1234 5678",
+      "url": "https://www.yourwebsite.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [ "Saturday", "Sunday" ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "24-hour Emergency Service"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -19,7 +49,8 @@
                 <div class="top-contact">
                     <span><i class="fas fa-phone-alt"></i> 0401 544 111</span>
                     <span><i class="fas fa-envelope"></i> enquiries@sitenstrata.com</span>
-                    <span><i class="fas fa-clock"></i> 24-Hour Emergency Service Available</span>
+                    <br> <span class="fas fa-clock"></i> Our hours: Mon-Sun, 9:00 AM - 6:00 PM</span>
+                    <br> <span class="fas fa-clock"></i> 24-Hour Emergency Service Available</span>
                 </div>
             </div>
         </div>
@@ -263,6 +294,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Serving All Perth Regions, WA</p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:0401544111">0401 544 111</a></p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:enquiries@sitenstrata.com">enquiries@sitenstrata.com</a></p>
+                <p><i class="fas fa-clock"></i> Our hours: Mon-Sun, 9:00 AM - 6:00 PM</p>
                 <p><i class="fas fa-clock"></i> 24-Hour Emergency Service Available</p>
                 <div class="social-links">
                 <div class="social-icons">
