@@ -27,6 +27,16 @@
             text-align: center;
             margin-bottom: 40px;
         }
+        /* MODIFIED: Styles for the header image (Image 1.png) */
+        header img {
+            max-width: 100%; /* Ensure it doesn't overflow its container */
+            height: auto; /* Maintain original aspect ratio */
+            display: block; /* Ensures it takes up its own block space */
+            margin: 0 auto 20px auto; /* Center horizontally, add margin below */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow */
+        }
+
         h1 {
             color: #2c3e50; /* Darker blue-gray for headings */
             font-size: 2.8em; /* Larger heading */
@@ -44,6 +54,7 @@
             gap: 15px; /* Space between meta items */
         }
         .post-content img {
+            /* These styles make images within the content banner-like */
             width: 100%; /* Make image span full width of its container */
             height: 180px; /* Fixed height for a banner-like appearance */
             object-fit: cover; /* Ensures the image covers the area without distortion, cropping if necessary */
@@ -88,33 +99,13 @@
         footer nav a:hover {
             color: #2980b9; /* Darker blue on hover */
         }
-
-        /* New styles for the conclusion section background */
-        .conclusion-banner {
-            background-image: url('http://googleusercontent.com/file_content/8'); /* Use the image as background */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            padding: 40px 30px; /* Add padding to give space for the background and content */
-            border-radius: 8px; /* Match other rounded elements */
-            color: #ffffff; /* Change text color to white for readability */
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Add subtle text shadow for contrast */
-            margin-top: 40px; /* Add some space above the section */
-            margin-bottom: 40px; /* Add some space below the section */
-        }
-        .conclusion-banner h2, .conclusion-banner p, .conclusion-banner strong, .conclusion-banner a {
-            color: #ffffff; /* Ensure all text elements inside are white */
-        }
-        .conclusion-banner a {
-            text-decoration: underline; /* Keep underline for links */
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <!-- Image 1.png - Blog Post Title Card -->
-            <img src="preventive maintenance house.jpg" alt="Blog Post: Preventive Maintenance - A Checklist for Your Property and Building. Read More.">
+            <img src="http://googleusercontent.com/file_content/1" alt="Blog Post: Preventive Maintenance - A Checklist for Your Property and Building. Read More.">
             <h1>The Proactive Property Owner's Guide: Your Seasonal Preventive Maintenance Checklist</h1>
         </header>
 
@@ -194,14 +185,11 @@
                     <li>Inspect and maintain sump pumps if present, ensuring they are operational.</li>
                 </ul>
 
-                <!-- Conclusion section with image 8.png as background -->
-                <div class="conclusion-banner">
-                    <h2>Conclusion</h2>
-                    <p>By following this comprehensive seasonal preventive maintenance checklist, you can proactively protect your property, reduce unexpected repair costs, and ensure a safe and comfortable environment year-round.</p>
-                    <p>For professional building maintenance and renovation services, contact **Site & Strata Solutions**.</p>
-                    <p><strong>Contact Us:</strong> 📞 0401 544 111</p>
-                    <p>Follow us on social media: <a href="https://www.facebook.com/siteandstratasolutions" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.instagram.com/sitenstratasolutions/#" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-                </div>
+                <h2>Conclusion</h2>
+                <p>By following this comprehensive seasonal preventive maintenance checklist, you can proactively protect your property, reduce unexpected repair costs, and ensure a safe and comfortable environment year-round.</p>
+                <p>For professional building maintenance and renovation services, contact **Site & Strata Solutions**.</p>
+                <p><strong>Contact Us:</strong> 📞 0401 544 111</p>
+                <p>Follow us on social media: <a href="https://www.facebook.com/siteandstratasolutions" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.instagram.com/sitenstratasolutions/#" target="_blank" rel="noopener noreferrer">Instagram</a></p>
             </div>
         </article>
 
