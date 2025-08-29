@@ -53,7 +53,60 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
     color: var(--primary-color); /* Default heading color is dark grey/black */
 }
+/* Service Areas Section */
+#service-areas {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
 
+#service-areas h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#service-areas p {
+  text-align: center;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+#service-areas ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#service-areas ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 1em;
+}
+
+#service-areas ul li::before {
+  content: "📍";
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+  font-size: 1em;
+}
+
+/* Responsive tweak for mobile */
+@media screen and (max-width: 600px) {
+  #service-areas ul {
+    columns: 1;
+  }
+}
 /* Ensure all sections have consistent padding and default white background */
 section {
     padding: 60px 0;
